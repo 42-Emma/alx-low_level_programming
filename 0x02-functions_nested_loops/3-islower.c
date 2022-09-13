@@ -2,9 +2,11 @@
 
 /**
  * islower - determines if input is a lowercase letter
+ *
  * @c: letter being tested
  *
  * Description: accepts an input and tests if input is a lowercase letter
+ *
  * Return: 1 for success, 0 for failure
  */
 int _islower(int c)
