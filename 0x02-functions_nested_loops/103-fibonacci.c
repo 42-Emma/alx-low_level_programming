@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	long long int first = 1, second = 2, next, c = 0;
+	long int first = 1, second = 2, next, c = 0;
 
-	while (first != 4,000,000)
+	while (first != 4000000)
 	{
 		if (first % 2 == 0)
 		{
