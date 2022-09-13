@@ -7,19 +7,24 @@
  */
 int main(void)
 {
-	long int first = 1, second = 2, next, c = 0;
+	int i;
+	unsigned long int j, k, next, sum;
 
-	while (first != 4000000)
+	j = 1;
+	k = 2;
+	sum = 0;
+
+	for (i = 1; i <= 33; ++i)
 	{
-		if (first % 2 == 0)
+		if (j < 4000000 && (j % 2) == 0)
 		{
-			c += first;
+			sum += j;
 		}
-		next = first + second;
-		first = second;
-		second = next;
+		next = j + k;
+		j = k;
+		k = next;
 	}
-	printf("%ld\n", c);
+	printf("%lu\n", sum);
 	return (0);
 
 }
