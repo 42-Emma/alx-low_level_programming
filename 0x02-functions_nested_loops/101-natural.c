@@ -14,7 +14,7 @@ int main(void)
 	{
 		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			n += i
+			n += i;
 		}
 	}
 	printf("%d\n", n);
