@@ -5,6 +5,7 @@
  * @c: letter being tested
  *
  * Description: Accepts an input and checks if it is an alphabet
+ * section header: taps into the main.h
  * Return: 1 for success, 0 for failure
  */
 int _isalpha(int c)
