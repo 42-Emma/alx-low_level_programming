@@ -9,19 +9,19 @@ int main(void)
 {
 	int first = 1, second = 2, next, c;
 
-	for (c = 1; c <= 50; c++)
+	for (c = 1; c <= 50; ++c)
 	{
-		if (c <= 1)
+		if (first != 20365011074)
 		{
-			next = c;
+			printf("%ld, ", first);
 		}
 		else
 		{
-			next = first + second;
-			first = second;
-			second = next;
+			printf("%ld\n", first);
 		}
-		printf("%d, ", next);
+		next = first + second;
+		first = second;
+		second = next;
 	}
 	return (0);
 }
