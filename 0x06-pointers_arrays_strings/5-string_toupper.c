@@ -5,7 +5,7 @@
  * @c: input
  * Return: c
  */
-char string_toupper(char *c)
+char *string_toupper(char *c)
 {
 	int x;
 
