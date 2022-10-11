@@ -1,6 +1,10 @@
 #include"dog.h"
 #include <stdlib.h>
 
+int _strlen(char *str);
+char *_strcopy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
+
 /**
  * _strlen - returns length of string
  * @str: string to be measured
@@ -46,7 +50,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *doggo;
 
-	if (name == NULL || age <= 0 || owner == NULL)
+	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
 	doggo = malloc(sizeof(dog_t));
